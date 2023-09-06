@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chart.js": "^4.4.0",
+    "module": "^1.2.5",
     "mongodb": "^6.0.0",
     "mongoose": "^7.5.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "requirejs": "^2.3.6"
   }
 }
