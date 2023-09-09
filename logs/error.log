@@ -1,0 +1,29 @@
+20230908	10:36::44	eaef14f6-ada5-4a27-aa65-d725ef798563	Error: Not allowed by CORS	/index	https://www.google.com
+20230909	00:28::49	17582d0c-7e55-45fa-9ac1-e8ce4b173095	SyntaxError: Unexpected string in JSON at position 27	/users	undefined
+20230909	00:29::30	113a6df9-cb6b-444b-8528-d97ddec6757e	SyntaxError: Unexpected string in JSON at position 27	/users	undefined
+20230909	00:32::10	1ab4348f-05fc-4152-a4fd-30cc77a0233e	SyntaxError: Unexpected token } in JSON at position 12	/users	undefined
+20230909	00:34::30	4820cef2-0de9-44b8-be0b-0df4660919ea	SyntaxError: Unexpected string in JSON at position 51	/users	undefined
+20230909	00:38::23	c5fb13e2-cc60-4d0b-b535-38d7fd45f5a0	SyntaxError: Unexpected token : in JSON at position 120	/users	undefined
+20230909	00:42::08	658bc50c-7b8c-4ce1-bbda-565163d25d3e	SyntaxError: Unexpected token " in JSON at position 2	/users	undefined
+20230909	00:42::35	7bc9b953-dc02-4f76-8bbb-caf5cc22eaac	SyntaxError: Unexpected token " in JSON at position 4	/users	undefined
+20230909	00:42::59	bfeb2fdc-c31e-428f-bc93-2a25fb952ef4	SyntaxError: Unexpected token " in JSON at position 4	/users	undefined
+20230909	00:43::00	3337be46-ecdf-4a3f-8e39-89347004036e	SyntaxError: Unexpected token " in JSON at position 4	/users	undefined
+20230909	00:43::04	d84193dd-7f2f-4aaa-9d41-45d6e5a5d721	SyntaxError: Unexpected token " in JSON at position 4	/users	undefined
+20230909	00:43::29	a88140a5-bd75-4355-85cd-8ab30c99c037	SyntaxError: Unexpected token " in JSON at position 4	/users	undefined
+20230909	00:43::52	cb6afbdd-90de-49da-aaea-6012f02bdd72	CastError: Cast to ObjectId failed for value "64fc03025a02a90006cb1d0" (type string) at path "_id" for model "User"	/users	undefined
+20230909	00:48::30	5dc3c85e-6867-49ce-9fae-ac860195dc9f	CastError: Cast to ObjectId failed for value "TomTom" (type string) at path "_id" for model "User"	/users	undefined
+20230909	00:49::15	81ff415b-3e1a-4ec2-8c46-8c8a1fbb5eef	ObjectParameterError: Parameter "filter" to findOne() must be an object, got "TomTom" (type string)	/users	undefined
+20230909	00:50::43	de343046-3fe4-45cd-88f6-0cf254b789bb	ValidationError: User validation failed: firstName: Path `firstName` is required.	/users	undefined
+20230909	00:51::24	cccc5829-2414-43e5-be56-ef2717975ecb	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	00:54::49	7ffadc5a-6a36-447d-bb38-3458e9be17d9	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	00:55::58	1b07a960-5b72-417f-8c5e-93736d0bae10	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	00:56::51	b903cd33-9207-43b9-9ad1-3c1ee1366caa	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	01:02::04	a15aa171-e26d-4894-aa1f-308926cf27ca	TypeError: user.save is not a function	/users	undefined
+20230909	01:02::59	bf3b9df4-ea12-45e0-93bd-ececd615c063	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	01:03::16	c81857a2-4b46-437a-9ec5-76b10a86ae72	TypeError: user.save is not a function	/users	undefined
+20230909	01:04::47	d2111f22-b969-4a91-9b2b-97eef4f4417d	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	01:06::37	63bed385-060b-4ae7-ae81-6b7262824a5f	TypeError: Cannot read properties of undefined (reading 'json')	/users	undefined
+20230909	01:07::00	6bac4963-00f6-4aa4-a07f-5f1464dd3ed3	TypeError: Cannot read properties of undefined (reading 'json')	/users	undefined
+20230909	01:07::21	3f437b4c-8d6a-4792-a3ab-1c7b8d4c169c	TypeError: Cannot read properties of undefined (reading 'json')	/users	undefined
+20230909	01:07::34	1330bb61-5d6a-43e3-bcf7-77f2697305ec	TypeError: Cannot read properties of undefined (reading 'push')	/users	undefined
+20230909	07:57::19	5cb14341-bfa7-4cf9-9bcd-8faea19010ca	CastError: Cast to ObjectId failed for value "64fc03025a02a90006cb1d0" (type string) at path "_id" for model "User"	/users	undefined
