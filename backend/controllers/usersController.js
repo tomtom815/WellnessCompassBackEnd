@@ -17,12 +17,15 @@ const getAllUsers = asyncHandler(async(req, res) =>{
 //get a single user @route /users/USERNAMEHERE
 
 const getOneUser = asyncHandler(async(req, res) => {
+    //get param from browser
     const userSearch = req.params.user
     const user = await User.find({
+        //search param
             username : userSearch
         }
     );
     if(!user?.length){
+        //no user
         return res.status(400).json({message: 'No user found'})
     }
     res.json(user);
