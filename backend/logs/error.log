@@ -10,3 +10,6 @@
 20230909	09:24::46	8d0482e4-6707-40d6-9fee-723f35d0783a	SyntaxError: Unexpected token " in JSON at position 0	/users	undefined
 20230909	09:25::40	a5aa04a5-9c74-4a89-aa35-4daa8e6f68c1	SyntaxError: Unexpected token " in JSON at position 0	/users	undefined
 20230909	09:27::51	e36e1843-e9b5-49c0-b9f2-343d19953c3c	CastError: Cast to string failed for value "{ username: 'ToneLoc' }" (type Object) at path "username" for model "User"	/users	undefined
+20230909	09:49::57	a6494fec-fb09-41c9-ab0f-c5d34f3220a8	SyntaxError: Unexpected end of JSON input	/users	undefined
+20230909	09:51::50	e975ddc0-3810-482c-9f7f-b4dcbd11cb82	SyntaxError: Unexpected end of JSON input	/users	undefined
+20230909	09:51::55	25b40f5b-6848-45f7-90d4-8d34124c7ed5	SyntaxError: Unexpected end of JSON input	/users	undefined
