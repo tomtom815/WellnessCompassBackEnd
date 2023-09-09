@@ -14,6 +14,8 @@ const getAllUsers = asyncHandler(async(req, res) =>{
     res.json(users);
 });
 
+//get a single user @route /users/USERNAMEHERE
+
 const getOneUser = asyncHandler(async(req, res) => {
     const userSearch = req.params.user
     const user = await User.find({

@@ -9,7 +9,7 @@ router.route('/')
     .delete(usersController.deleteUser) //delete
 
 router.route('/:user')
-    .get(usersController.getOneUser)
+    .get(usersController.getOneUser) //read one user
 
 
     module.exports = router;
