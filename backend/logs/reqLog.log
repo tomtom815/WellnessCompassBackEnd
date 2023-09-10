@@ -43,3 +43,7 @@
 20230909	19:17::09	0770be1f-b5f1-4617-8602-fd2dab2ca47a	GET	/	undefined
 20230909	19:17::09	84a6362f-a10b-427d-8695-74afedffcdf2	GET	/css/style.css	undefined
 20230909	19:17::09	9f838723-d19f-4aa1-bb73-208d656a65b3	GET	/favicon.ico	undefined
+20230910	08:57::31	7fbc2ecb-9632-4f8b-b353-9c82adea2d6a	GET	/	undefined
+20230910	08:57::31	0867dabb-7dcc-4b87-9c38-c5ec543c8185	GET	/css/style.css	undefined
+20230910	08:57::31	21486881-3625-433b-a226-c8243d72d6f2	GET	/robots.txt	undefined
+20230910	09:17::49	4cc28018-fd84-40ee-a4b4-fccc3fefafdc	GET	/users	undefined
