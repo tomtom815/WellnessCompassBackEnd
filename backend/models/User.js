@@ -28,9 +28,13 @@ const userSchema = new Schema({
     steps: [Object],
     activeMinutes: [Object],
     dailyMeals: [Object],
-    healthGoals: [Object]
+    healthGoals: [Object],
     //val note: i have a function i used in a previous project that can add new member variables to all users,
     //so if we want to add more variables, we can just use that //fingerguns
+    userConsent: {
+        type: Boolean,
+        default: false
+    }
 });
 
 module.exports = mongoose.model('User', userSchema);
