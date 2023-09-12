@@ -43,3 +43,7 @@
 20230909	19:17::09	0770be1f-b5f1-4617-8602-fd2dab2ca47a	GET	/	undefined
 20230909	19:17::09	84a6362f-a10b-427d-8695-74afedffcdf2	GET	/css/style.css	undefined
 20230909	19:17::09	9f838723-d19f-4aa1-bb73-208d656a65b3	GET	/favicon.ico	undefined
+20230912	04:43::04	fb49c45c-0433-4f3a-8abe-2cd823db6c23	GET	/users/ToneLoc	http://localhost:3000
+20230912	04:43::04	1881a970-2ce6-4332-b135-cb25f7f554b3	GET	/users/ToneLoc	http://localhost:3000
+20230912	04:46::28	ba94695e-64e8-4014-86e7-960fd5ef1ebd	GET	/users/ToneLoc	http://localhost:3000
+20230912	04:46::28	452f4639-83bb-489b-922d-5affc4f074e3	GET	/users/ToneLoc	http://localhost:3000
