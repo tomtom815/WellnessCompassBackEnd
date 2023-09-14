@@ -79,3 +79,13 @@
 20230913	21:17::41	5feac9b0-7079-4f4b-8dd2-a1fe649477d6	POST	/users	http://localhost:3000
 20230913	21:17::59	d029aadd-9117-4eff-a79f-c3a6c602a133	OPTIONS	/auth	http://localhost:3000
 20230913	21:17::59	213e2e38-3d14-4cfe-890e-5cae41336e15	POST	/auth	http://localhost:3000
+20230914	04:36::25	3c39b34d-3d89-4035-9323-cc1d2a2270eb	OPTIONS	/users	http://localhost:3000
+20230914	04:36::25	a2728cd1-cb59-4cd6-98a6-03322e51006f	POST	/users	http://localhost:3000
+20230914	04:36::34	f34876fe-0b53-410b-9e3b-d2a99a18d2d1	GET	/users	undefined
+20230914	04:37::00	1568ddf5-e84b-4608-a8b1-48f32825b6ea	GET	/users	undefined
+20230914	05:11::06	62458197-37e6-49c8-a7ce-1b82672468c0	POST	/auth	undefined
+20230914	05:39::09	558e3736-9b2a-4fb4-9337-5406ef42aa3f	POST	/auth	undefined
+20230914	05:39::38	1cfd8c56-83c5-4e7c-a5d4-0105bfd64c99	GET	/users	undefined
+20230914	05:45::36	167a6b48-1bdc-446c-89a5-8fa80ed70aeb	POST	/auth	undefined
+20230914	05:45::54	8c926c71-fba7-458e-8127-69e7e599272b	POST	/auth	undefined
+20230914	05:47::06	5ee44d99-fb69-4c25-baf6-20211b3f1a59	POST	/auth	undefined

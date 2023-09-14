@@ -15,3 +15,5 @@
 20230909	09:51::55	25b40f5b-6848-45f7-90d4-8d34124c7ed5	SyntaxError: Unexpected end of JSON input	/users	undefined
 20230909	19:04::56	950173da-b82f-4513-9432-7ef3e5622ec0	Error: ENOENT: no such file or directory, stat '/Applications/MAMP/htdocs/WellnessCompass/backend/views/index.html'	/	undefined
 20230909	19:05::53	c1d7a90e-c471-476e-a6b8-1a09a25493ac	Error: ENOENT: no such file or directory, stat '/Applications/MAMP/htdocs/WellnessCompass/backend/views/index.html'	/	undefined
+20230914	04:36::34	d7f55104-9f82-4a67-b6b2-7753aa7696b4	SyntaxError: Unexpected end of JSON input	/users	undefined
+20230914	05:45::54	c4167626-56ac-4014-a34f-d100ccadf744	SyntaxError: Unexpected token p in JSON at position 23	/auth	undefined

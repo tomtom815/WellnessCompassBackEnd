@@ -4,23 +4,30 @@ const usersDB = {
 }
 
 const bcrypt = require('bcrypt');
-const res = require('express/lib/response');
 
-const handleLogin = async (request, response) => {
+const handleLogin = async (request, res) => {
   const { username, password } = request.body;
 
-  if (!username || !password) return res.status(400).json({ 'message': 'Username and password are required.' });
-  const foundUser = usersDB.users.find(person => person.username === user);
-  if (!foundUser) return response.sendStatus(401); // Unauthorized
+  if (!username || !password) return res.status(400).json({ message: 'Username and password are required.' });
 
-  // Evaluated password
-  const match = await bcrypt.compare(password, foundUser.password);
-  if (match) {
-    // Create JWT
-    response.json({ 'success': `User ${user} is logged in!` });
-  } else {
-    response.sendStatus(401);
+  try {
+    const foundUser = await usersDB.users.findOne({ username }).exec();
+
+    if (!foundUser) return res.sendStatus(401); // Unauthorized
+
+    // Compare passwords/perform authentication
+    const isPasswordMatch = await bcrypt.compare(password, foundUser.password);
+
+    if (isPasswordMatch) {
+      return res.status(200).json({ message: 'Login successful' });
+    } else {
+      return res.status(401).json({ message: 'Authentication failed' });
+    }
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: 'Internal server error' });
   }
-}
+};
+
 
 module.exports = { handleLogin };
