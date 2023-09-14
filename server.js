@@ -41,6 +41,7 @@ app.use(cors(corsOptions));
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', require('./backend/routes/root'));
 app.use('/users', require('./backend/routes/userRoutes'));
+app.use('/auth', require('./backend/routes/auth'));
 
 
 app.all('*', (req, res) => {
