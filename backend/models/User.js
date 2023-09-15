@@ -34,6 +34,11 @@ const userSchema = new Schema({
     userConsent: {
         type: Boolean,
         default: false
+    },
+    userAge: [Number],
+    userGender: {
+        Type: String,
+        
     }
 });
 
