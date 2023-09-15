@@ -1610,3 +1610,11 @@
 20230914	23:29::58	9ce67d8a-e08f-435e-9d4b-1a0cd9a7999d	GET	/users/	http://localhost:3000
 20230914	23:29::58	f7486db8-8ff5-4f5e-b302-e8a4f877e185	GET	/users/ToneLoc	http://localhost:3000
 >>>>>>> 8c0789f (added some more parameters to the model to use for calculations)
+20230914	23:40::25	e7b34700-455c-4a19-af24-5a0d7a9ced99	GET	/users/ToneLoc	http://localhost:3000
+20230914	23:40::25	391dfbb3-f692-4e49-bd27-d588e95a7bf5	GET	/users/	http://localhost:3000
+20230914	23:40::25	4c93ed23-c386-4628-a50a-29b643fd86ad	GET	/users/ToneLoc	http://localhost:3000
+20230914	23:40::25	e8b13fc8-7792-4a40-b109-42b206b7f17b	GET	/users/ToneLoc	http://localhost:3000
+20230914	23:40::25	af81d12b-54d6-4bc4-8055-847a0a4de394	GET	/users/ToneLoc	http://localhost:3000
+20230914	23:40::25	fdf07b8f-27b3-4928-8c41-820a1f275fe2	GET	/users/	http://localhost:3000
+20230914	23:40::25	4ba32f03-1764-417b-8e64-344e57b5b8d7	GET	/users/	http://localhost:3000
+20230914	23:40::25	3bf5e481-f6ac-4475-ace2-84d2eb299ea9	GET	/users/	http://localhost:3000
