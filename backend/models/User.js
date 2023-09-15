@@ -35,8 +35,10 @@ const userSchema = new Schema({
         type: Boolean,
         default: false
     },
-    userAge: [Number],
-    userGender: {
+    age: {
+        type: Number
+    },
+    gender: {
         Type: String,
    
     }

@@ -67,7 +67,7 @@ const createNewUser = asyncHandler(async(req, res) =>{
 // @access Private
 
 const updateUser = asyncHandler(async(req, res) =>{
-    const {id,username, firstName, lastName, password, weight, height, steps, activeMinutes, dailyMeals} = req.body
+    const {id,username, firstName, lastName, password, weight, height, steps, activeMinutes, dailyMeals, age, gender} = req.body
 
     // confirm data
     if(!username){
@@ -110,6 +110,12 @@ const updateUser = asyncHandler(async(req, res) =>{
     }
     if(dailyMeals){
         user.dailyMeals.push(dailyMeals);
+    }
+    if(gender){
+        user.gender = gender
+    }
+    if(age){
+        user.age = age
     }
 
     if(password){
