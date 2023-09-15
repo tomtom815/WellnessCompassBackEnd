@@ -39,7 +39,7 @@ const userSchema = new Schema({
         type: Number
     },
     gender: {
-        Type: String,
+        type: String,
    
     }
 });

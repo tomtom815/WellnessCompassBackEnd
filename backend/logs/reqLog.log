@@ -1658,3 +1658,5 @@
 20230915	08:52::32	5ba91c85-8185-465c-8440-b1a91bc76889	GET	/users/	http://localhost:3000
 20230915	08:52::33	9839d125-790e-4e3a-bbdb-6acb00148210	GET	/users/ToneLoc	http://localhost:3000
 20230915	08:57::38	93e8bd1c-d6c1-4781-9a86-3026f336c70b	GET	/users/	undefined
+20230915	09:14::15	d567d16e-5ea9-4d9d-ad46-30435246a229	PATCH	/users/	undefined
+20230915	09:14::47	ec4e7216-e9dc-4f23-9d9b-7c1f56a48165	PATCH	/users/	undefined
