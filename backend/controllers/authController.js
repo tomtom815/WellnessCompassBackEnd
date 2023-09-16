@@ -22,11 +22,32 @@ const handleLogin = async (request, res) => {
     if (!foundUser) return res.sendStatus(401).json({ message: 'Authentication failed' }); // Unauthorized
 
     // Compare passwords/perform authentication
-    const isPasswordMatch = await bcrypt.compareSync(password, foundUser.password);
+    const isPasswordMatch = await bcrypt.compare(password, foundUser.password);
 
     if (isPasswordMatch) {
+      // Create JWTs
+      const accessToken = jwt.sign(
+        { "username": foundUser.username },
+        process.env.ACCESS_TOKEN_SECRET,
+        { expiresIn: '30s' }
+      );
+      const refreshToken = jwt.sign(
+        { "username": foundUser.username },
+        process.env.REFRESH_TOKEN_SECRET,
+        { expiresIn: '1d' }
+      );
 
-      return res.status(200).json({ message: 'Login successful' });
+      // Saving refreshToken with current user
+      const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
+      const currentUser = { ...foundUser, refreshToken };
+      usersDB.setUsers([...otherUsers, currentUser]);
+      await fsPromises.writeFile(
+        path.join(__dirname, '..', 'model', 'users.json'),
+        JSON.stringify(usersDB.users)
+      );
+      
+      res.cookie('jwt', refreshToken, { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 })
+      res.json({ accessToken });
     } else {
       return res.status(401).json({ message: 'Authentication failed' });
     }
