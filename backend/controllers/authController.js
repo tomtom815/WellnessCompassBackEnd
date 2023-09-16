@@ -5,6 +5,12 @@ const usersDB = {
 
 const bcrypt = require('bcrypt');
 
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
+const fsPromises = require('fs').promises();
+const path = require('path');
+
+
 const handleLogin = async (request, res) => {
   const { username, password } = request.body;
 
@@ -16,9 +22,10 @@ const handleLogin = async (request, res) => {
     if (!foundUser) return res.sendStatus(401); // Unauthorized
 
     // Compare passwords/perform authentication
-    const isPasswordMatch = await bcrypt.compare(password, foundUser.password);
+    const isPasswordMatch = await bcrypt.compareSync(password, foundUser.password);
 
     if (isPasswordMatch) {
+
       return res.status(200).json({ message: 'Login successful' });
     } else {
       return res.status(401).json({ message: 'Authentication failed' });
