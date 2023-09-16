@@ -12,6 +12,16 @@ const path = require('path');
 
 
 const handleLogin = async (request, res) => {
+  /**
+   * Handles the login process.
+   * 
+   * @param {object} request - The request object containing the username and password in the request body.
+   * @param {object} res - The response object.
+   * @returns {object} - If the login is successful, the function sends a JSON response containing the access token.
+   *                    If the username or password is missing, the function sends a 400 status with an error message.
+   *                    If the user is not found or the password does not match, the function sends a 401 status with an error message.
+   *                    If there is an internal server error, the function sends a 500 status with an error message.
+  */
   const { username, password } = request.body;
 
   if (!username || !password) return res.status(400).json({ message: 'Username and password are required.' });
@@ -38,6 +48,7 @@ const handleLogin = async (request, res) => {
       );
 
       // Saving refreshToken with current user
+      console.log(usersDB.users);
       const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
       const currentUser = { ...foundUser, refreshToken };
       usersDB.setUsers([...otherUsers, currentUser]);
@@ -55,7 +66,7 @@ const handleLogin = async (request, res) => {
     console.error(error);
     return res.status(500).json({ message: 'Internal server error' });
   }
-};
+}
 
 
 module.exports = { handleLogin };
