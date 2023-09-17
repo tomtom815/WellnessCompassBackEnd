@@ -174,3 +174,7 @@
 20230917	10:10::21	41aa3280-1292-4410-827a-93361aba2708	GET	/users	undefined
 20230917	10:10::29	0d385a8e-cc7a-4ccb-89c7-92116012edc6	GET	/users	undefined
 20230917	10:10::33	af261874-428b-4244-b05e-dab05e700528	GET	/users	undefined
+20230917	10:18::10	d0e082dd-2fcd-4fcb-a256-5926216ca1ed	POST	/auth	undefined
+20230917	10:18::22	96b3bb2c-bd6f-4294-8ed8-a9058e26f300	GET	/users	undefined
+20230917	10:18::28	145158fc-bfa6-4f93-a594-e9034e9b98ae	GET	/users	undefined
+20230917	10:18::32	a43e443f-bb1a-4d53-83d8-e564d076023c	GET	/users	undefined
