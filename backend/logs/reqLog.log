@@ -163,3 +163,14 @@
 20230917	09:57::59	de8094b4-14a8-45a1-b30d-9aa6f77e1222	POST	/auth	http://localhost:3000
 20230917	09:58::49	edb46da1-437d-4cd1-8098-a8cf50cb1570	POST	/auth	undefined
 20230917	09:59::07	125ce9e0-2e3b-4495-b064-5657e0b0c217	POST	/auth	undefined
+20230917	10:05::44	56a068c4-9c8b-42d1-ad33-38ea3c2c6e2e	POST	/auth	undefined
+20230917	10:06::35	bbe6889d-4c1e-4d45-bf7e-a516a970d3eb	POST	/auth	undefined
+20230917	10:07::09	64f23f21-ff6e-45c2-b448-2f8e63f5689c	POST	/auth	undefined
+20230917	10:07::27	1d24bbf1-0f00-4c43-b5af-1e8d2e12488b	GET	/users	undefined
+20230917	10:09::33	944d9da8-d4c5-48b4-af9b-d3997cea130f	GET	/users	undefined
+20230917	10:09::48	ed6deb66-c6ed-4d4c-a8a4-b52a89cecda1	POST	/auth	undefined
+20230917	10:09::56	fe5c6f1a-013e-46dd-ac3e-324f99bb472f	GET	/users	undefined
+20230917	10:10::16	b7191f6c-0946-4532-ab10-c9156dc2e3a6	GET	/users	undefined
+20230917	10:10::21	41aa3280-1292-4410-827a-93361aba2708	GET	/users	undefined
+20230917	10:10::29	0d385a8e-cc7a-4ccb-89c7-92116012edc6	GET	/users	undefined
+20230917	10:10::33	af261874-428b-4244-b05e-dab05e700528	GET	/users	undefined
