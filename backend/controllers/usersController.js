@@ -88,8 +88,9 @@ const updateUser = asyncHandler(async(req, res) =>{
         return res.status409.json({message: 'Duplicate username'})
     }
 
-    user.username = username
-
+    if(username){
+        user.username = username
+    }
     if(firstName){
         user.firstName = firstName
     }
