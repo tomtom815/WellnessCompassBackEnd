@@ -10,7 +10,8 @@ require('dotenv').config();
 const fsPromises = require('fs').promises;
 const path = require('path');
 
-
+console.log(usersDB);
+console.log("hello");
 const handleLogin = async (request, res) => {
   /**
    * Handles the login process.
@@ -28,7 +29,7 @@ const handleLogin = async (request, res) => {
 
   try {
     const foundUser = await usersDB.users.findOne({ username }).exec();
-
+    
     if (!foundUser) return res.sendStatus(401).json({ message: 'Authentication failed' }); // Unauthorized
 
     // Compare passwords/perform authentication
@@ -46,14 +47,14 @@ const handleLogin = async (request, res) => {
         process.env.REFRESH_TOKEN_SECRET,
         { expiresIn: '1d' }
       );
-
+      debugger;
       // Saving refreshToken with current user
-      console.log(usersDB.users);
-      const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
+      //const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
+      const otherUsers = await usersDB.users.find({ username: { $ne: foundUser.username } }).exec();
       const currentUser = { ...foundUser, refreshToken };
       usersDB.setUsers([...otherUsers, currentUser]);
       await fsPromises.writeFile(
-        path.join(__dirname, '..', 'model', 'users.json'),
+        path.join(__dirname, '..', 'models', 'users.json'),
         JSON.stringify(usersDB.users)
       );
       
