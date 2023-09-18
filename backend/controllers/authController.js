@@ -9,9 +9,6 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const fsPromises = require('fs').promises;
 const path = require('path');
-
-console.log(usersDB);
-console.log("hello");
 const handleLogin = async (request, res) => {
   /**
    * Handles the login process.
@@ -47,7 +44,7 @@ const handleLogin = async (request, res) => {
         process.env.REFRESH_TOKEN_SECRET,
         { expiresIn: '1d' }
       );
-      debugger;
+
       // Saving refreshToken with current user
       //const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
       const otherUsers = await usersDB.users.find({ username: { $ne: foundUser.username } }).exec();
