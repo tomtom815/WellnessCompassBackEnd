@@ -14,7 +14,7 @@ const mongoose = require('mongoose');
 const connectDB = require('./backend/config/dbConn');
 const { logEvents } = require('./backend/middleware/logger');
 
-const verifyJWT = require('./backend/middleware/verifyJWT');
+//const verifyJWT = require('./backend/middleware/verifyJWT');
 const { verify } = require('crypto');
 
 const PORT = process.env.PORT || 3500;
@@ -45,8 +45,9 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', require('./backend/routes/root'));
 app.use('/auth', require('./backend/routes/auth'));
 
-// Require login to gain access token to access users
-app.use(verifyJWT);
+// Commented out because I'm not sure yet where this should be used
+// // Require login to gain access token to access users
+// app.use(verifyJWT);
 app.use('/users', require('./backend/routes/userRoutes'));
 
 

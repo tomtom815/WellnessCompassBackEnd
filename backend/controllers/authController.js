@@ -46,7 +46,6 @@ const handleLogin = async (request, res) => {
       );
 
       // Saving refreshToken with current user
-      //const otherUsers = usersDB.users.filter(person => person.username !== foundUser.username);
       const otherUsers = await usersDB.users.find({ username: { $ne: foundUser.username } }).exec();
       const currentUser = { ...foundUser, refreshToken };
       usersDB.setUsers([...otherUsers, currentUser]);
@@ -65,6 +64,5 @@ const handleLogin = async (request, res) => {
     return res.status(500).json({ message: 'Internal server error' });
   }
 }
-
 
 module.exports = { handleLogin };
