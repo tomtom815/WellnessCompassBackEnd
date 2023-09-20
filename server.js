@@ -49,10 +49,11 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', require('./backend/routes/root'));
 app.use('/auth', require('./backend/routes/auth'));
 app.use('/refresh', require('./backend/routes/refresh'));
+app.use('/logout', require('./backend/routes/refresh'));
 
 // Commented out because I'm not sure yet where this should be used
 // // Require login to gain access token to access users
-app.use(verifyJWT);
+//app.use(verifyJWT);
 app.use('/users', require('./backend/routes/userRoutes'));
 
 
