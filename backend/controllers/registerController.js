@@ -1,7 +1,4 @@
-const User = {
-    users: require('../models/User'),
-    setUsers: function (data) { this.users = data }
-}
+const User = require('../models/User');
 
 const asyncHandler = require('express-async-handler');
 const bcrypt = require('bcrypt');
@@ -22,7 +19,12 @@ const handleNewUser = asyncHandler(async(req, res) =>{
 
     // Hash password
     const hashedPwd = await bcrypt.hash(password, 10) // salt rounds
-    const userObject = { username, "password": hashedPwd, firstName, lastName};
+    const userObject = {
+        username,
+        "password": hashedPwd,
+        firstName,
+        lastName
+    };
 
     // Create and store user
     const user = await User.create(userObject);
