@@ -6,7 +6,6 @@ const path = require('path');
 const {logger} = require('./backend/middleware/logger');
 const errorHandler = require('./backend/middleware/errorHandler');
 const cookieParser = require('cookie-parser');
-const credentials = require('./backend/middleware/credentials');
 const cors = require('cors');
 const corsOptions = require('./backend/config/corsOptions');
 
@@ -42,23 +41,18 @@ app.use(express.json());
 // Middleware for cookies
 app.use(cookieParser());
 
-// Handle options credentials check - before CORS
-// and fetch cookies credentials requirement
-app.use(credentials);
-
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', require('./backend/routes/root'));
-//app.use('/register', require('./backend/routes/register'));
 app.use('/auth', require('./backend/routes/auth'));
-app.use('/refresh', require('./backend/routes/refresh'));
-app.use('/logout', require('./backend/routes/logout'));
 
-// Commented out because I'm not sure yet where this should be used
+// Commented out because it shouldn't be applied to all user routes
+// Might refactor userRoutes eventually to split off the register route as Dave has done in his tutorial
 // // Require login to gain access token to access users
 //app.use(verifyJWT);
+
 app.use('/users', require('./backend/routes/userRoutes'));
 
 
