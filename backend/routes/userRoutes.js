@@ -8,13 +8,13 @@ const usersController = require('../controllers/usersController')
 const verifyJWT = require('../middleware/verifyJWT');
 
 router.route('/')
-    .get(usersController.getAllUsers) //read
-    //.post(usersController.createNewUser) //create
-    .patch(usersController.updateUser) //update
-    .delete(usersController.deleteUser) //delete
+    .get(verifyJWT, usersController.getAllUsers) //read
+    .post(usersController.createNewUser) //create
+    .patch(verifyJWT, usersController.updateUser) //update
+    .delete(verifyJWT, usersController.deleteUser) //delete
 
 router.route('/:user')
-    .get(usersController.getOneUser) //read one user
+    .get(verifyJWT, usersController.getOneUser) //read one user
 
 
     module.exports = router;
