@@ -51,6 +51,10 @@ const handleLogin = async (request, res) => {
       const currentUser = { ...foundUser, refreshToken };
       usersDB.setUsers([...otherUsers, currentUser]);
 
+      // I think the above code only updates the users.json that Dave uses in the early tutorials
+      // I think this might actually update the database
+      await foundUser.save();
+
       console.log(currentUser);
 
       await fsPromises.writeFile(

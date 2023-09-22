@@ -405,3 +405,7 @@
 20230921	21:09::03	c8d75691-ea63-46ec-8005-924a7badcdae	GET	/refresh	undefined
 20230921	21:09::07	35574234-37e0-4d21-94bc-79ca91dd1f4b	GET	/refresh	undefined
 20230921	21:10::19	4f3b2e81-63bb-4763-83b9-23ab1c0d05cb	POST	/auth	undefined
+20230921	21:31::37	35a6af26-e074-4dbf-943d-ab45d3690e2c	OPTIONS	/users	http://localhost:3000
+20230921	21:31::37	42524c46-8114-4692-9171-8a3d5fa9bfff	POST	/users	http://localhost:3000
+20230921	21:31::54	a468912a-d14c-4396-b6cf-aa08302098ec	POST	/auth	undefined
+20230921	21:32::03	ddd85d1e-723c-488d-b532-b6355eb1faf6	GET	/refresh	undefined
