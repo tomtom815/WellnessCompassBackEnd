@@ -27,8 +27,9 @@ const handleLogin = async (request, res) => {
   try {
     const foundUser = await usersDB.users.findOne({ username }).exec();
     
-    if (!foundUser) return res.sendStatus(401).json({ message: 'Authentication failed' }); // Unauthorized
-
+    if (!foundUser) {
+      return res.sendStatus(401).json({ message: 'Authentication failed' }); // Unauthorized
+    }
     // Compare passwords/perform authentication
     const isPasswordMatch = await bcrypt.compare(password, foundUser.password);
 

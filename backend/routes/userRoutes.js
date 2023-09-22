@@ -9,7 +9,7 @@ const verifyJWT = require('../middleware/verifyJWT');
 
 router.route('/')
     .get(usersController.getAllUsers) //read
-    .post(usersController.createNewUser) //create
+    //.post(usersController.createNewUser) //create
     .patch(usersController.updateUser) //update
     .delete(usersController.deleteUser) //delete
 
