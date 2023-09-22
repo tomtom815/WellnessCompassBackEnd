@@ -1,14 +1,7 @@
-const usersDB = {
-  users: require('../models/User'),
-  setUsers: function (data) { this.users = data }
-}
-
+const User = require('../models/User');
 const bcrypt = require('bcrypt');
-
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-const fsPromises = require('fs').promises;
-const path = require('path');
 const handleLogin = async (request, res) => {
   /**
    * Handles the login process.
@@ -21,12 +14,10 @@ const handleLogin = async (request, res) => {
    *                    If there is an internal server error, the function sends a 500 status with an error message.
   */
   const { username, password } = request.body;
-
   if (!username || !password) return res.status(400).json({ message: 'Username and password are required.' });
 
   try {
-    const foundUser = await usersDB.users.findOne({ username }).exec();
-    
+    const foundUser = await User.findOne({ username }).exec();
     if (!foundUser) {
       return res.sendStatus(401).json({ message: 'Authentication failed' }); // Unauthorized
     }
@@ -47,16 +38,9 @@ const handleLogin = async (request, res) => {
       );
 
       // Saving refreshToken with current user
-      const otherUsers = await usersDB.users.find({ username: { $ne: foundUser.username } }).exec();
-      const currentUser = { ...foundUser, refreshToken };
-      usersDB.setUsers([...otherUsers, currentUser]);
-
-      console.log(currentUser);
-
-      await fsPromises.writeFile(
-        path.join(__dirname, '..', 'models', 'users.json'),
-        JSON.stringify(usersDB.users)
-      );
+      foundUser.refreshToken = refreshToken;
+      const result = await foundUser.save();
+      console.log(result); // Delete for production
       
       res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 });
       res.json({ accessToken });
