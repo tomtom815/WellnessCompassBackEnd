@@ -18,7 +18,7 @@ const handleLogout = async (request, res) => {
 
   // Delete the refreshToken in db
   foundUser.refreshToken = '';
-  const result = foundUser.save();
+  const result = await foundUser.save();
   console.log(result); // Delete before production
   
   res.clearCookie('jwt', { httpOnly: true }); // In production - would add secure: true - only serves on https
