@@ -42,7 +42,7 @@ const handleLogin = async (request, res) => {
       const result = await foundUser.save();
       console.log(result); // Delete for production
       
-      res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 }); //secure: true, (remove to be compatible with thunder client)
+      res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 }); //secure: true, (remove to be compatible with thunder client)
       res.json({ accessToken });
     } else {
       return res.status(401).json({ message: 'Authentication failed' });

@@ -6,7 +6,6 @@ const path = require('path');
 const {logger} = require('./backend/middleware/logger');
 const errorHandler = require('./backend/middleware/errorHandler');
 const cookieParser = require('cookie-parser');
-const credentials = require('./backend/middleware/credentials');
 const cors = require('cors');
 const corsOptions = require('./backend/config/corsOptions');
 
@@ -41,10 +40,6 @@ app.use(express.json());
 
 // Middleware for cookies
 app.use(cookieParser());
-
-// Handle options credentials check - before CORS
-// and fetch cookies credentials requirement
-app.use(credentials);
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));

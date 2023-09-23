@@ -430,3 +430,13 @@
 20230922	05:33::56	b179269b-2996-4e3f-a954-6cb0147b1048	GET	/logout	undefined
 20230922	05:35::14	53442815-fe8d-4c92-8e3b-6884c2635705	GET	/users	undefined
 20230922	05:35::31	bce2aa4b-e1bb-4a1e-88a9-b917e14438bd	GET	/users/ToneLoc	undefined
+20230922	20:47::54	c9ab1ee0-baf9-4559-a5a5-38e1aa4de609	POST	/auth	undefined
+20230922	20:47::59	9c07bf06-4ea6-4de9-a744-fefe9bcff94b	GET	/logout	undefined
+20230922	20:48::03	706bbd04-61ad-4be8-95b8-d06a75256982	POST	/auth	undefined
+20230922	20:48::12	6432ffd2-7f0d-48ab-b51f-165319541d9c	GET	/refresh	undefined
+20230922	20:48::15	70281f16-9b24-4907-8b26-eb4318960158	GET	/refresh	undefined
+20230922	20:48::17	f6085592-726c-4ba7-b7ff-2d5645401256	GET	/refresh	undefined
+20230922	20:48::18	fed5db27-c2c6-4710-8490-857da5debf81	GET	/refresh	undefined
+20230922	20:48::19	f5f2b29a-cea4-4975-ae8a-91eae173182c	GET	/refresh	undefined
+20230922	20:48::22	7efb49c3-889e-4452-9d43-d7588238dd1c	GET	/users/	undefined
+20230922	20:48::40	4f056357-d8fa-4653-b9da-f489f144a8b3	GET	/users/	undefined
