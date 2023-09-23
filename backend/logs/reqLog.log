@@ -424,3 +424,15 @@
 20230922	19:30::19	0546f8d7-bc3f-467d-85e1-b1284e5d5453	POST	/users	http://localhost:3000
 20230922	19:31::24	1ac19505-d597-424f-b50f-674287df3caf	POST	/users	undefined
 20230922	19:31::34	95241026-2789-471b-ac48-3ebd18669ea4	POST	/users	undefined
+20230922	19:55::59	ce1a702d-ba60-4970-a492-0d532f1f142c	POST	/register	undefined
+20230922	19:56::13	e3d237f5-e161-4e09-9e5d-1853a765a239	POST	/users	undefined
+20230922	19:56::22	c9709d8e-f840-43ac-a78a-9e138efe3c1b	POST	/users	undefined
+20230922	19:57::27	4eeb6a6f-991e-4cee-8405-bc68740d301f	POST	/users	undefined
+20230922	19:57::55	0e9f925f-1100-4b7a-93e4-457756e782f0	POST	/auth	undefined
+20230922	19:58::41	3370fe1c-b1d0-42c5-9ac4-422ead12989b	GET	/refresh	undefined
+20230922	19:59::29	4ceed5bc-984a-47d8-bf7a-7e31bb4bf1ac	POST	/auth	undefined
+20230922	20:00::30	169b58dd-1732-4500-8752-a4433973cd33	POST	/auth	undefined
+20230922	20:00::45	61fa4416-0d24-4690-81bd-c6e4ea8fb3f8	GET	/refresh	undefined
+20230922	20:01::47	0b23b87e-ac69-4dd8-98f7-5be0fc5f57ce	GET	/logout	undefined
+20230922	20:02::48	7b15e4ea-3a7a-4099-a37b-03c040a6ba2d	POST	/auth	undefined
+20230922	20:02::53	03a7dd10-4323-4a1b-8297-1e9655f3196a	GET	/logout	undefined
