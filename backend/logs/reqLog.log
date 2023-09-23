@@ -436,3 +436,15 @@
 20230922	20:01::47	0b23b87e-ac69-4dd8-98f7-5be0fc5f57ce	GET	/logout	undefined
 20230922	20:02::48	7b15e4ea-3a7a-4099-a37b-03c040a6ba2d	POST	/auth	undefined
 20230922	20:02::53	03a7dd10-4323-4a1b-8297-1e9655f3196a	GET	/logout	undefined
+20230922	20:19::27	9dd57b8b-f67a-4586-80a3-c76285f5f9a5	POST	/users	undefined
+20230922	20:19::33	a77cb6ba-ba61-4ce7-9ba6-b1fca32aaa91	GET	/refresh	undefined
+20230922	20:19::48	49395c5a-21fe-4ec1-8a97-04cd95b16d65	GET	/refresh	undefined
+20230922	20:20::23	68e7ad72-9aee-4eac-b491-877a0914558c	POST	/auth	undefined
+20230922	20:20::26	a2be3661-f53f-4f63-b025-1cc8e52daa8b	GET	/refresh	undefined
+20230922	20:20::29	a0bc642a-5fd0-4e44-8ebb-cdc3aac5a514	GET	/refresh	undefined
+20230922	20:21::37	b48e7633-a008-417c-812a-e52d798b73f3	POST	/auth	undefined
+20230922	20:22::15	eafb6a26-7fb1-4484-8fd6-e70690750f8f	GET	/refresh	undefined
+20230922	20:22::19	a61c28b7-ed7f-44b7-8998-5235217f43a5	POST	/auth	undefined
+20230922	20:22::30	35485266-409b-4868-91e1-4680c8d70e13	POST	/auth	undefined
+20230922	20:22::34	d9f02163-35a0-4884-9d6b-312d359e52f5	GET	/refresh	undefined
+20230922	20:22::39	727de1dc-ed18-48af-8b57-e7e399fbf56a	GET	/logout	undefined
