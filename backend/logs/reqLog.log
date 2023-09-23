@@ -2012,3 +2012,13 @@
 20230922	20:54::20	18403b7d-298f-4d47-8fcd-36dabcb18947	GET	/refresh	undefined
 20230922	20:54::22	64311754-9960-4049-85e2-f33d2bce1505	GET	/logout	undefined
 >>>>>>> jwt
+20230922	21:03::02	bbafaa12-e6e2-4647-8f17-c0275df58996	POST	/auth	undefined
+20230922	21:03::05	178839a8-9d6f-4194-8f9e-3f9e33155a69	GET	/logout	undefined
+20230922	21:03::08	dea1a76b-c06c-4996-9abb-05aedaec9b72	POST	/auth	undefined
+20230922	21:03::12	eace0eeb-83d7-4ab4-a168-09acfc37ccf4	GET	/refresh	undefined
+20230922	21:03::13	b3ed0ca6-2ccc-488d-bff0-9ee4059cc0ad	GET	/refresh	undefined
+20230922	21:03::13	6bcf84dd-be72-468b-8fb8-991402947900	GET	/refresh	undefined
+20230922	21:03::13	11b7956a-9826-46d1-9375-9c8dff098bfe	GET	/refresh	undefined
+20230922	21:03::14	8a8c5584-c619-4e0b-9f3b-a1c086f7acee	GET	/refresh	undefined
+20230922	21:03::14	a0ed4123-345b-45eb-bd1c-41153f6da617	GET	/refresh	undefined
+20230922	21:03::28	d81a1ea1-362d-4383-a8a5-6d1986193378	GET	/users/	undefined
