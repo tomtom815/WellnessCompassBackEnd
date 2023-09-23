@@ -17,4 +17,9 @@
 20230909	19:05::53	c1d7a90e-c471-476e-a6b8-1a09a25493ac	Error: ENOENT: no such file or directory, stat '/Applications/MAMP/htdocs/WellnessCompass/backend/views/index.html'	/	undefined
 20230914	04:36::34	d7f55104-9f82-4a67-b6b2-7753aa7696b4	SyntaxError: Unexpected end of JSON input	/users	undefined
 20230914	05:45::54	c4167626-56ac-4014-a34f-d100ccadf744	SyntaxError: Unexpected token p in JSON at position 23	/auth	undefined
+<<<<<<< HEAD
 20230915	09:14::15	92b71f40-6510-4c8e-afe7-95a9738a2d1a	ValidationError: User validation failed: gender: Cast to Object failed for value "M" (type string) at path "gender"	/users/	undefined
+=======
+20230919	18:56::12	0e3639e7-165c-4da6-bea5-2304cfcb2233	MongooseError: Model.find() no longer accepts a callback	/refresh	undefined
+20230920	04:59::44	d76b2434-b804-46d2-8f4e-94a40218b36b	TypeError: res.headers is not a function	/users	http://localhost:3000
+>>>>>>> jwt

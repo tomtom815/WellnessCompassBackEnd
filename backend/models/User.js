@@ -31,7 +31,7 @@ const userSchema = new Schema({
     healthGoals: [Object],
     //val note: i have a function i used in a previous project that can add new member variables to all users,
     //so if we want to add more variables, we can just use that //fingerguns
-    userConsent: {
+    userConsent:{
         type: Boolean,
         default: false
     },
