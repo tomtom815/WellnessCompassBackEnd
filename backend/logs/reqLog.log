@@ -440,3 +440,6 @@
 20230922	20:48::19	f5f2b29a-cea4-4975-ae8a-91eae173182c	GET	/refresh	undefined
 20230922	20:48::22	7efb49c3-889e-4452-9d43-d7588238dd1c	GET	/users/	undefined
 20230922	20:48::40	4f056357-d8fa-4653-b9da-f489f144a8b3	GET	/users/	undefined
+20230922	20:54::13	3b36ab9b-0acc-4646-b9f0-02af4bbe75a4	POST	/auth	undefined
+20230922	20:54::20	18403b7d-298f-4d47-8fcd-36dabcb18947	GET	/refresh	undefined
+20230922	20:54::22	64311754-9960-4049-85e2-f33d2bce1505	GET	/logout	undefined
