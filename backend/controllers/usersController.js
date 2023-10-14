@@ -125,7 +125,7 @@ const updateUser = asyncHandler(async(req, res) =>{
     }
     const updatedUser = await user.save()
 
-    res.json({message: `${updatedUser.username} updated`})
+    res.json(updatedUser)
 });
 
 // @desc delete user
