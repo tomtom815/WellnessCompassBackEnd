@@ -14,3 +14,5 @@ node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node
 *.log
 backend/logs/reqLog.log
 backend/logs/reqLog.log
+backend/logs/error.log
+backend/logs/reqLog.log
