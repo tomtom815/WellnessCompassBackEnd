@@ -17,12 +17,11 @@ const handleRefreshToken = async (request, res) => {
     refreshToken,
     process.env.REFRESH_TOKEN_SECRET,
     (err, decoded) => {
-      console.log(foundUser, foundUser.username, decoded, decoded.username, cookies)
       if (err || foundUser.username !== decoded.username) return res.sendStatus(403);
       const accessToken = jwt.sign(
         { "username": decoded.username },
         process.env.ACCESS_TOKEN_SECRET,
-        { expiresIn: '1m' }
+        { expiresIn: '30s' }
       );
       res.json({ accessToken });
     }
