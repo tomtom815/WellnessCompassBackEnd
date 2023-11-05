@@ -10,3 +10,11 @@ node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node
 .env
 *.log
 .vscode/launch.json
+/logs/
+*.log
+backend/logs/reqLog.log
+backend/logs/reqLog.log
+backend/logs/error.log
+backend/logs/reqLog.log
+backend/logs/reqLog.log
+*.log

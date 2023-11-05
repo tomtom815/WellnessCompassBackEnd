@@ -22,6 +22,7 @@ const userSchema = new Schema({
     },
     weight: [Object],
     height: [Object],
+    hoursSlept: [Object],
     BMI: [Object], //this can be calculated by height and weight so maybe user doesn't have to be prompted to put it in?
     //and we can do it for them?  
     //TH: Agreed, formula is 703 X height(inches)/weight(lbs)^2 ie for me 703 * (165/67^2) = BMI 25.8
