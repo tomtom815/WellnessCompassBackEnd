@@ -122,7 +122,7 @@ const updateUser = asyncHandler(async(req, res) =>{
         user.age = age
     }
 
-    if(userConsent){
+    if(userConsent !== 'undefined'){
         user.userConsent = userConsent;
     }
 
