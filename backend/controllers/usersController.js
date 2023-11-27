@@ -36,7 +36,7 @@ const getOneUser = asyncHandler(async(req, res) => {
 // @access Private
 
 const createNewUser = asyncHandler(async(req, res) =>{
-    const { firstName, lastName, username, password } = req.body
+    const { firstName, lastName, gender, age, username, password } = req.body
    
     // confirm data
     if(!username || !password || !firstName){
@@ -51,7 +51,7 @@ const createNewUser = asyncHandler(async(req, res) =>{
 
     // Hash password
     const hashedPwd = await bcrypt.hash(password, 10) // salt rounds
-    const userObject = { username, "password": hashedPwd, firstName, lastName};
+    const userObject = { username, "password": hashedPwd, firstName, lastName, gender, age};
 
     // Create and store user
     const user = await User.create(userObject);
@@ -85,7 +85,7 @@ const updateUser = asyncHandler(async(req, res) =>{
 
     //Allow updates to the original user
     if(duplicate && duplicate?._id.toString() !== id){
-        return res.status409.json({message: 'Duplicate username'})
+        return res.status(409).json({message: 'Duplicate username'})
     }
 
     if(username){
