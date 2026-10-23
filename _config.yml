@@ -1,0 +1,4 @@
+exclude:
+- backend/logs
+- logs
+- node_modules
